@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'comfortaa';
+  src: url('./font/Comfortaa/Comfortaa-VariableFont_wght.ttf');
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +9,73 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.2s !important;
+}
+body {
+	background: linear-gradient(-45deg, #a052ee, #948fec, #2326d5, #5b23d5);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+h1, h2 {
+font-family: 'comfortaa' !important;
+font-weight: 700;
+color: rgb(255, 255, 255);
+
+}
+
+.header-container {
+  margin-top: 20px;
+}
+
+.color {
+  transition-duration: 0.2 !important; 
+  text-align: center;
+}
+.color {
+  position: relative;
+  color: rgba(255, 255, 255, 0) !important;
+}
+
+.color:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s !important;
+}
+
+.color::after {
+  content: attr(data-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  color: white;
+  text-shadow: 1px 1px 6px  rgb(71, 71, 71) !important;
+
+  font-weight: bold;
+  font-size: 16px;
+  visibility: hidden;
+}
+
+.color:hover::after {
+  visibility: visible;
+}
+
+.color[data-color^="#"][data-color~="rgb"]::after {
+  filter: brightness(50%) !important;
+}
+.main-container {
+  margin-top: 20px;
+  background-color: rgb(248, 248, 248) !important;
+  border: solid white 3px;
 }
