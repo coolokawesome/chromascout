@@ -1,0 +1,5 @@
+react-spinners
+react-router-dom
+react-router
+cheerio
+react-cookie
