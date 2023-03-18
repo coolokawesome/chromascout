@@ -9,30 +9,30 @@ ChromaScout is a web application designed to scrape the CSS files of a website a
 5. [Contributing](#Contributing)
 6. [License](#License)
 
-### Features 💡 <a name="Features"></a>
+### Features 💡 <a id="Features"></a>
 - Extract color palette from any website
 - Multiple proxy APIs used to fetch the CSS files
 - Regular expressions used to extract color values from CSS files
 - Easy to use interface
 
-### Installation 🖥 <a name="Installation"></a>
+### Installation 🖥 <a id="Installation"></a>
 To install the application, clone the repository to your local machine and install the required dependencies using npm:
 
 `git clone https://github.com/coolokawesome/chromascout.git
 cd chromascout
 npm install`
 
-### Usage 🔮 <a name="Usage"></a>
+### Usage 🔮 <a id="Usage"></a>
 To use ChromaScout, enter the URL of the website you want to scrape in the input field on the home page. The application will fetch the CSS files using multiple proxy APIs and extract the color values used in the stylesheets. The extracted colors will then be displayed as a color palette below.
 
-### APIs used ⚡️ <a name="Api"></a>
+### APIs used ⚡️ <a id="Api"></a>
 ChromaScout uses multiple proxy APIs to fetch the CSS files from the inputted website. The APIs used include:
 
 cors-anywhere
 allorigins
 
-### Contributing 🙌 <a name="Contributing"></a>
+### Contributing 🙌 <a id="Contributing"></a>
 Contributions are always welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or a pull request on the repository.
 
-### License 💼 <a name="License"></a>
+### License 💼 <a id="License"></a>
 ChromaScout is licensed under the MIT License.
