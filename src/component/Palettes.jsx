@@ -14,7 +14,7 @@ function Palettes() {
   useEffect(() => {
     async function fetchCssStyles() {
       const apiKey = '19415c193a8139c4edda3c1ea5438769';
-      const scraperApiUrl = `http://api.scraperapi.com?api_key=${apiKey}&url=`;
+      const scraperApiUrl = `https://api.scraperapi.com?api_key=${apiKey}&url=`;
     
       let errorCount = 0;
       let foundValidCss = false; // flag variable

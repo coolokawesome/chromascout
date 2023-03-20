@@ -20,6 +20,14 @@
     "react-spinners": "^0.13.8",
     "web-vitals": "^2.1.4"
   },
+  
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/node"
+      }
+    ]
+  ,
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -47,4 +55,5 @@
   "devDependencies": {
     "cors-anywhere": "^0.4.4"
   }
+  
 }
