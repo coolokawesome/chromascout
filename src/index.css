@@ -46,10 +46,13 @@ color: rgb(255, 255, 255);
 .color {
   position: relative;
   color: rgba(255, 255, 255, 0) !important;
+  -moz-box-shadow: 0 0 3px #383838;
+  -webkit-box-shadow: 0 0 3px #2e2e2e;
+  box-shadow: 1px 1px 4px #868686;
 }
 
 .color:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition-duration: 0.2s !important;
 }
 
@@ -69,13 +72,18 @@ color: rgb(255, 255, 255);
 
 .color:hover::after {
   visibility: visible;
+
 }
 
 .color[data-color^="#"][data-color~="rgb"]::after {
   filter: brightness(50%) !important;
+
 }
 .main-container {
   margin-top: 20px;
   background-color: rgb(248, 248, 248) !important;
   border: solid white 3px;
+}
+.loadingtext {
+  color: rgb(255, 77, 0);
 }
